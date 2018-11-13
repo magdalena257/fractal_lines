@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fractal lines</title>
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> <canvas></canvas>
+    <button>Let me change it!</button>
+    <form action="">
+        <h3>Next figure:</h3>
+        <label class="displayN" for="UI_fraction">Fraction:</label>
+        <input type="number" id="UI_fraction" name="UI_fraction" min="2" max="100" value="6">
+
+        <label for="UI_time">Delay lines:</label>
+        <input type="number" id="UI_time" name="UI_time" min="2" max="10000" value="50">
+
+        <!-- random colors -->
+        <label for="UI_colorFigure">Figure color random:</label>
+        <input type="checkbox" id="colorFigure">
+
+
+        <!-- color of lines random -->
+        <label for="UI_colorLines">Lines color random:</label>
+        <input type="checkbox" id="colorLines">
+
+        <!-- rotate -->
+        <!-- <label for="UI_rotation">Rotation:</label>
+        <input type="checkbox" id="rotation"> -->
+
+        <label for="UI_rotation">Rotation:</label>
+        <input type="number" id="UI_rotation" name="UI_rotation" min="0" max="100" value="0">
+
+        <p class='preset' id="preset1">Preset 1</p>
+        <p class='preset' id="preset2">Preset 2</p>
+        <p class='preset' id="reset">Reset</p>
+    </form>
+
+
+    <script src="canvas_v2.js"></script>
+
+</body>
+
+</html>
