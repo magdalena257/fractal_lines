@@ -56,6 +56,7 @@ newBreakPoints();
 btnDisplayUI.addEventListener('click', () => {
 
     form.style.display = 'flex';
+    document.querySelector('.formWrapper').style.display = 'flex';
     btnDisplayUI.style.display = 'none';
 })
 

@@ -37,6 +37,17 @@ button {
 
 form {
     display: none;
+    flex-direction: column;
+    flex-basis: 24%;
+}
+
+form h3 {
+    flex-basis: 100%;
+}
+
+
+.formWrapper {
+    display: none;
     flex-wrap: wrap;
     flex-basis: 24%;
 }
@@ -66,4 +77,58 @@ p {
 
 input[type="checkbox"] {
     align-self: center;
+}
+
+@media (orientation:portrait) {
+
+    body {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    canvas {
+        margin: 1vh;
+        flex-basis: 75%;
+        flex-shrink: 1;
+
+    }
+
+    form {
+        flex-basis: 25%;
+        flex-direction: column;
+
+    }
+
+    form h3 {
+        flex-basis: 20%;
+    }
+
+    .formWrapper {
+        flex-basis: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    button {
+        flex-shrink: 1;
+    }
+
+    button,
+    form {
+        font-size: 2em;
+    }
+
+    input {
+        font-size: 1em;
+
+    }
+
+    form p {
+        flex-basis: 33%;
+        text-align: center;
+    }
+
+    input[type="checkbox"] {
+        zoom: 3;
+    }
 }
